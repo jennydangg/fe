@@ -9,6 +9,7 @@
       font-family: 'Courier New', monospace;
       background-color: #f6f0eb;
       color: #222;
+      scroll-behavior: smooth;
     }
 
     header {
@@ -51,7 +52,7 @@
     }
 
     .section {
-      padding: 10px 60px;
+      padding: 40px 60px;
     }
 
     .section h2 {
@@ -97,6 +98,37 @@
       font-size: 14px;
       color: #aaa;
     }
+
+    .data-section {
+      background-color: #7fa8d5;
+      color: white;
+      padding: 60px 40px;
+    }
+
+    .data-section h2 {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+
+    .chart-section {
+      background-color: #f6f0eb;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .chart-section img {
+      width: 90%;
+      max-width: 1000px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .data-column-title {
+      background: #554f61;
+      padding: 10px;
+      border-radius: 15px;
+    }
   </style>
 </head>
 <body>
@@ -139,17 +171,59 @@
         </ul>
       </div>
 
-     <div class="column">
-  <h3>
-    <br>
-    <span class="summary-label-inline">Social Media Use</span>
-  </h3>
-  <ul>
-   <li>Platforms used regularly</li> 
-       <li>Average screen time</li>
-<li>Main purpose of social media use</li>
-</div>
+      <div class="column">
+        <h3>Social Media Use</h3>
+        <ul>
+          <li>Platforms used regularly</li>
+          <li>Average screen time</li>
+          <li>Main purpose of social media use</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
+  <!-- DATA COLLECTION -->
+  <div class="data-section">
+    <h2>DATA COLLECTION</h2>
+
+    <div class="columns">
+      <div class="column">
+        <h3 class="data-column-title">Processing</h3>
+        <ul>
+          <li>Survey data downloaded as CSV from Google Forms</li>
+          <li>Imported into Excel using Power Query</li>
+          <li>Transformation Tools</li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <h3 class="data-column-title">Cleaning</h3>
+        <ul>
+          <li>Removed incomplete/problematic entries</li>
+          <li>Corrected misspellings and extra punctuation</li>
+          <li>Final dataset: 82 participants</li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <h3 class="data-column-title">Analysis</h3>
+        <ul>
+          <li>83% of users were aged 18–25</li>
+          <li>Top platforms: TikTok, Instagram, YouTube</li>
+          <li>66% bought right after seeing on social media</li>
+          <li>37% felt trend pressure sometimes</li>
+          <li>31% made impulse purchases occasionally</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 60px;">DATA VISUALIZATION</h2>
+  </div>
+
+  <!-- GRAPH IMAGE -->
+  <div class="chart-section">
+    <img src="untitled design.png" alt="Survey Graphs">
+  </div>
 
 </body>
 </html>
